@@ -1,0 +1,60 @@
+{
+  "api": {
+    "name": "ShellExecPlugin",
+    "slug": "shellexecplugin",
+    "docs": "",
+    "tags": [
+      {
+        "text": "ShellExecPlugin",
+        "name": "interface"
+      },
+      {
+        "text": "Android-only commandline execution plugin for Capacitor.",
+        "name": "description"
+      }
+    ],
+    "methods": [
+      {
+        "name": "exec",
+        "signature": "(options: { cmd: string[]; wait: boolean; }) => Promise<{ value: string; code: number; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "- Options for execution. Options are written as a dictionary with parameters:\n`cmd` as a list of arguments, including executable.\n`wait` as a boolean meaning if the process should wait until end.",
+            "type": "{ cmd: string[]; wait: boolean; }"
+          }
+        ],
+        "returns": "Promise<{ value: string; code: number; }>",
+        "tags": [
+          {
+            "name": "async"
+          },
+          {
+            "name": "function",
+            "text": "exec(options);"
+          },
+          {
+            "name": "description",
+            "text": "Executes command-line code."
+          },
+          {
+            "name": "param",
+            "text": "options - Options for execution. Options are written as a dictionary with parameters:\n`cmd` as a list of arguments, including executable.\n`wait` as a boolean meaning if the process should wait until end."
+          },
+          {
+            "name": "returns",
+            "text": "Dictionary with output as `value` and `code` as exit code."
+          }
+        ],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "exec"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
