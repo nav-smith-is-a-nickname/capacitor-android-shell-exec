@@ -21,7 +21,7 @@ jobs:
         cache: gradle
 
     - name: Build Project
-      run: npm run build
+      run: npm install ./ && npm run build
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
